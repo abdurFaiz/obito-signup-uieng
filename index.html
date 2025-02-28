@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obito</title>
+    <link rel="stylesheet" href="/src/style/output.css">
+    <link rel="shortcut icon" href="/src/image/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- start header -->
+    <header class="relative w-full top-0 z-30">
+        <div class="container mx-auto">
+            <div class=" flex items-center justify-between  py-5 bg-white rounded-xl ">
+                <div class="flex gap-[75px] items-center">
+                    <!-- Logo and Brand Name -->
+                    <div class="flex items-center gap-1.5 cursor-pointer">
+                        <img src="/src/image/logo.svg" alt="Logo Obito">
+                        <a href="#hero" class="text-2xl font-extrabold text-primary-text font-poppins">Obito</a>
+                    </div>
+                    <!-- Navigation -->
+                    <nav>
+                        <ul class="flex gap-10 items-center">
+                            <li>
+                                <a href="#home"
+                                    class="text-base  font-poppins text-primary-text hover:font-semibold ">Home</a>
+                            </li>
+                            <li>
+                                <a href="#pricing"
+                                    class="text-base font-poppins text-primary-text hover:font-semibold ">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#features"
+                                    class="text-base font-poppins text-primary-text hover:font-semibold ">Features</a>
+                            </li>
+                            <li>
+                                <a href="#testimonials"
+                                    class="text-base font-poppins text-primary-text hover:font-semibold ">Testimonials</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="flex items-center gap-5">
+                    <button class="cursor-pointer">
+                        <img src="/src/icon/device-message.svg" alt="device-message-icon">
+                    </button>
+                    <div class="h-6 w-px bg-border-grey"></div>
+                    <div class="flex gap-3 items-center">
+                        <button
+                            class="font-poppins px-5 py-3 rounded-full font-semibold bg-white border border-border-grey text-primary-text cursor-pointer">Sign
+                            Up</button>
+                        <button
+                            class="font-poppins px-5 py-3 rounded-full font-semibold bg-primary-color text-white cursor-pointer">My
+                            Account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start content  -->
+    <main class="bg-background-body">
+        <!-- start form section -->
+        <section id=" home" class="w-full min-h-screen">
+            <div class="w-full flex flex-row items-center gap-[50px] justify-center">
+                <form action="/">
+                    <div
+                        class="w-1/2 flex flex-col gap-5 p-5 bg-white border border-border-grey rounded-[1.25rem] min-w-[510px] ml-[75px]">
+                        <h1 class="text-primary-text font-poppins font-bold text-[22px]">Upgrade Your Skills</h1>
+                        <div class="flex flex-row gap-2 items-center">
+                            <div class="flex items-center">
+                                <label for="upload-photo"
+                                    class="flex justify-center items-center w-[90px] h-[90px] border border-border-grey rounded-full text-primary-text text-sm font-semibold cursor-pointer">
+                                    Add Photo
+                                </label>
+                                <input popovertarget="my-popover" type="file" id="upload-photo" class="hidden">
+                            </div>
+                            <button popover id="my-popover"
+                                class="text-xs font-bold text-warning-accent px-[10px] py-[6px] rounded-full opacity-0 starting:opacity-0 starting:open:opacity-100">
+                                DELETE PHOTO
+                            </button>
+                        </div>
+                        <!-- full name field -->
+                        <div class="flex flex-col gap-2">
+                            <label for="fullname-field" class="text-base text-primary-text">Complete Name</label>
+                            <div
+                                class="flex flex-row gap-2 items-center px-5 py-3.5 rounded-full border border-border-grey bg-white focus-within:border-primary-color">
+                                <img src="/src/icon/profile.svg" alt="icon-profile" class="size-5">
+                                <input type="text" name="fullname" id="fullname-field"
+                                    placeholder="Type your valid email address"
+                                    class="w-full outline-none text-primary-text font-semibold placeholder-secondary-text bg-transparent placeholder:font-normal">
+                            </div>
+                        </div>
+                        <!-- occupation field -->
+                        <div class="flex flex-col gap-2">
+                            <label for="occupation-field" class="text-base text-primary-text">Occupation</label>
+                            <div
+                                class="flex flex-row gap-2 items-center px-5 py-3.5 rounded-full border border-border-grey bg-white focus-within:border-primary-color">
+                                <img src="/src/icon/profile.svg" alt="icon-occupation" class="size-5">
+                                <input type="text" name="occupation" id="occupation-field"
+                                    placeholder="Type your valid email address"
+                                    class="w-full outline-none text-primary-text font-semibold placeholder-secondary-text bg-transparent placeholder:font-normal">
+                            </div>
+                        </div>
+                        <!-- email field -->
+                        <div class="flex flex-col gap-2">
+                            <label for="email-field" class="text-base text-primary-text">Email Address</label>
+                            <div
+                                class="flex flex-row gap-2 items-center px-5 py-3.5 rounded-full border border-border-grey bg-white focus-within:border-primary-color">
+                                <img src="/src/icon/sms.svg" alt="email-icon" class="size-5">
+                                <input type="email" name="email" id="email-field"
+                                    placeholder="Type your valid email address"
+                                    class="w-full outline-none text-primary-text font-semibold placeholder-secondary-text bg-transparent placeholder:font-normal">
+                            </div>
+                        </div>
+                        <!-- password field -->
+                        <div class="flex flex-col gap-2">
+                            <label for="password-field" class="text-base text-primary-text ">Password</label>
+                            <div
+                                class="flex flex-row gap-2 items-center px-5 py-3.5 rounded-full border border-border-grey bg-white focus-within:border-primary-color">
+                                <img src="/src/icon/shield-security.svg" alt="password" class="size-5">
+                                <input type="password" name="password" id="password-field"
+                                    placeholder="Type your valid email address"
+                                    class="w-full outline-none text-primary-text font-semibold placeholder-secondary-text bg-transparent placeholder:font-normal">
+                            </div>
+                        </div>
+                        <!-- confirm password field -->
+                        <div class="flex flex-col gap-2">
+                            <label for="confirm-password-field" class="text-base text-primary-text">Confirm
+                                Password</label>
+                            <div
+                                class="flex flex-row gap-2 items-center px-5 py-3.5 rounded-full border border-border-grey bg-white focus-within:border-primary-color">
+                                <img src="/src/icon/shield-security.svg" alt="icon-password" class="size-5">
+                                <input type="password" name="confirm-password" id="confirm-password-field"
+                                    placeholder="Type your valid email address"
+                                    class="w-full outline-none text-primary-text font-semibold placeholder-secondary-text bg-transparent placeholder:font-normal">
+                            </div>
+                        </div>
+                        <!-- CTA field -->
+                        <button
+                            class="py-3.5 px-5 rounded-full bg-primary-color text-white text-base font-semibold cursor-pointer">Create
+                            My Account</button>
+                    </div>
+                </form>
+                <div class="flex items-end justify-end w-1/2">
+                    <img src="/src/image/banner.png" alt="banner image" class="object-cover w-full max-h-[847]">
+                </div>
+            </div>
+        </section>
+        <!-- end form section -->
+    </main>
+    <!-- end content  -->
+
+</body>
+
+</html>

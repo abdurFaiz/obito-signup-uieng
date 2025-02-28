@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+    --font-poppins: Poppins, sans-serif;
+
+    --color-primary-color: oklch(48.26% 0.063 183.62);
+    --color-primary-text: oklch(15.51% 0.057 282.87);
+    --color-secondary-text: oklch(54.19% 0.021 268.91);
+    --color-border-grey: oklch(94.21% 0.003 247.86);
+    --color-background-body: oklch(98.33% 0.002 165.08);
+    --color-warning-accent: oklch(62.30% 0.221 28.97);
+    --color-warning-accent-100: oklch(93.81% 0.031 22.61);
+
+}
